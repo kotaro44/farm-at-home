@@ -1,0 +1,31 @@
+{
+  "name": "farm-at-home",
+  "version": "1.0.0",
+  "description": "Sample page of a supermarket using all JS frameworks",
+  "license": "ISC",
+  "author": {
+    "name": "Carlos Amilcar Sanchez Rosa",
+    "email": "csanchezrhn@gmail.com",
+    "website": "http://kotaro44.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotaro44/farm-at-home.git"
+  },
+  "main": "public/index.html",
+  "scripts": {
+    "react": "cd node_modules/farm-at-home-react/ & npm run frontend & cd .. & cd ..",
+    "angular": "cd node_modules/farm-at-home-angular/ & npm run frontend & cd .. & cd ..",
+    "angularjs": "cd node_modules/farm-at-home-angularjs/ & npm run frontend & cd .. & cd ..",
+    "vuejs": "cd node_modules/farm-at-home-vuejs/ & npm run frontend & cd .. & cd ..",
+    "backend": "fah-backend -p 3000",
+    "start": "npm run backend | npm run react | npm run angular | npm run angularjs | npm run vuejs"
+  },
+  "dependencies": {
+    "farm-at-home-backend": "https://github.com/kotaro44/farm-at-home-backend.git",
+    "farm-at-home-react": "https://github.com/kotaro44/farm-at-home-react.git",
+    "farm-at-home-angular": "https://github.com/kotaro44/farm-at-home-angular.git",
+    "farm-at-home-angularjs": "https://github.com/kotaro44/farm-at-home-angularjs.git",
+    "farm-at-home-vuejs": "https://github.com/kotaro44/farm-at-home-vuejs.git"
+  }
+}
